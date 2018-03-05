@@ -39,7 +39,7 @@ public class BotAutoClicker implements NativeKeyListener, NativeMouseMotionListe
      * Time between each iteration
      * in Milliseconds
      */
-    private static final int IterarionPauseTime = 5;
+    private static final int IterationPauseTime = 5;
     
     /**
      * Escape key to close the program
@@ -142,7 +142,7 @@ public class BotAutoClicker implements NativeKeyListener, NativeMouseMotionListe
         // Make the Thread sleep x ms
         for (int i = 0; i < BotAutoClicker.Iterations; i++){
             try {
-                Thread.sleep(BotAutoClicker.IterarionPauseTime);
+                Thread.sleep(BotAutoClicker.IterationPauseTime);
             } catch (InterruptedException ex) {
                 Logger.getLogger(BotAutoClicker.class.getName()).log(Level.SEVERE, null, ex);
             }
